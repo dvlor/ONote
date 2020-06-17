@@ -1,0 +1,35 @@
+.App{
+  height: 100%;
+  display: flex;
+  user-select: none;
+}
+
+.App .side-panel{
+  width: 20%;
+  min-width: 240px;
+  box-shadow: #fafafa;
+  border-right: solid 1px #ddd;
+}
+
+.App .list-panel{
+  width: 20%;
+  min-width: 240px;
+  background-color: #fafafa;
+}
+
+.App .content-panel{
+  flex: 1;
+}
+
+.note-list{
+  line-height: 3em;
+  font-size: 16px;
+  color: #333;
+}
+.note-list li{
+  border-bottom: solid 1px #ccc;
+}
+.note-list li time{
+  float: right;
+  color: #999;
+}
