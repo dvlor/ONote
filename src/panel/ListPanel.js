@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../components/Icon';
 
 export default class ListPanel extends React.Component {
   render() {
@@ -8,6 +9,7 @@ export default class ListPanel extends React.Component {
           <input style={filterStyle} type="text"/>
           <ul className="note-list">
             <li>
+              <Icon></Icon>
               <span>笔记1</span>
               <time>06-16</time>
             </li>
