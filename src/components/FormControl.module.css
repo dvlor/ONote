@@ -1,0 +1,19 @@
+.control{
+  display: inline-block;
+  color: #999;
+  height: 40px;
+}
+
+.control i{
+  height: 100%;
+  cursor: pointer;
+  padding: 0 15px;
+  display: inline-flex;
+  align-items: center;
+}
+.control i + i{
+  margin-left: 10px;
+}
+.control i:hover{
+  background-color: #f1f1f1;
+}

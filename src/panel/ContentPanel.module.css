@@ -1,0 +1,17 @@
+.top{
+  height: 80px;
+  padding: 0 20px;
+}
+.top input{
+  border: 0;
+  line-height: 80px;
+  padding-left: .5em;
+  font-size: 18px;
+  color: #212121;
+  outline: none;
+}
+
+.content{
+  background-color: #BDBDBD;
+  flex: 1;
+}

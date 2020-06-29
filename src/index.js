@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import RightMenuService from './service/RightMenuService'
+
+RightMenuService.prevent(window);
 
 ReactDOM.render(
   <React.StrictMode>

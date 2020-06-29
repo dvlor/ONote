@@ -1,0 +1,14 @@
+.bf-container{
+  display: flex;
+  flex-direction: column;
+}
+.bf-controlbar{
+  background-color: #fff;
+}
+.bf-content{
+  width: 720px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  flex: 1;
+}

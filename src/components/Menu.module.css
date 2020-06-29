@@ -1,0 +1,10 @@
+.menuItem{
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  transition: all 277ms;
+}
+.menuItem:hover{
+  background-color: #666;
+  color: #fff;
+}

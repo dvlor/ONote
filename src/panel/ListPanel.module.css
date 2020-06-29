@@ -1,0 +1,67 @@
+/* 列表 */
+.noteItem{
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.noteItem, .noteItem i, .noteItem time{
+  transition: all .3s;
+}
+
+.noteItem:hover{
+  background-color: #9e9e9e;
+}
+
+.noteItem:hover, .noteItem:hover i, .noteItem:hover time{
+  color: #fff;
+}
+
+
+.noteItem i{
+  color: #9E9E9E;
+}
+
+.noteItem span{
+  flex: 1;
+  margin: 0 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.noteItem time{
+  color: #757575;
+}
+/* 列表元素 */
+.noteList{
+  line-height: 3em;
+  font-size: 16px;
+  color: #212121;
+  flex: 1;
+  overflow: auto;
+}
+
+/* 搜索框 */
+.filter {
+  border: solid 1px #f1f1f1;
+  line-height: 2.5em;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0 .5em;
+  margin-bottom: 15px;
+  color: #999;
+}
+
+/* 外层 */
+.wraper{
+  width: 240px;
+  margin: 0 auto;
+  padding: 10px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

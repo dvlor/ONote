@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-div,ul,li,p{
+div,ul,li,p,input,hr{
   margin: 0;
   padding: 0;
 }

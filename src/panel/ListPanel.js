@@ -1,30 +1,21 @@
 import React from 'react';
 import Icon from '../components/Icon';
+import ListPanelStyle from './ListPanel.module.css';
+import RightMenuService from '../service/RightMenuService'
 
 export default class ListPanel extends React.Component {
   render() {
+
+    const items = [1,2,3,4,5,6,7,8,9,10,11,12].map(function (i) {
+      return <ListItem key={i} />
+    });
+
     return (
       <div className="list-panel">
-        <div className="wraper" style={wraperStyle}>
-          <input style={filterStyle} type="text"/>
-          <ul className="note-list">
-            <li>
-              <Icon></Icon>
-              <span>笔记1</span>
-              <time>06-16</time>
-            </li>
-            <li>
-              <span>笔记1</span>
-              <time>06-16</time>
-            </li>
-            <li>
-              <span>笔记1</span>
-              <time>06-16</time>
-            </li>
-            <li>
-              <span>笔记1</span>
-              <time>06-16</time>
-            </li>
+        <div className={ListPanelStyle.wraper}>
+          <input className={ListPanelStyle.filter} type="text"/>
+          <ul className={ListPanelStyle.noteList}>
+            {items}
           </ul>
         </div>
       </div>
@@ -32,20 +23,21 @@ export default class ListPanel extends React.Component {
   }
 }
 
-const wraperStyle = {
-  width: '240px',
-  margin: '0 auto',
-  padding: '10px 0'
+class ListItem extends React.Component{
+
+  contextMenuHandler(e) {
+    RightMenuService.show(e.clientX, e.clientY, this);
+  }
+
+
+  render(){
+    return (
+      <li onContextMenu={(e) => this.contextMenuHandler(e)} className={ListPanelStyle.noteItem}>
+        <Icon type="file"></Icon>
+        <span>笔记1</span>
+        <time>06-16</time>
+      </li>
+    );
+  }
 }
 
-const filterStyle = {
-  border: 'solid 1px #f1f1f1',
-  lineHeight: '2.5em',
-  fontSize: '14px',
-  width: '100%',
-  boxSizing: 'border-box',
-  outline: 'none',
-  padding: '0 .5em',
-  marginBottom: '15px',
-  color: '#999'
-}
