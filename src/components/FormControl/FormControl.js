@@ -1,6 +1,6 @@
 // 最大化 最小化 关闭工具栏
 import React from 'react';
-import Icon from './Icon';
+import Icon from '../Icon';
 import FormControlStyle from './FormControl.module.css';
 // window-maximize
 

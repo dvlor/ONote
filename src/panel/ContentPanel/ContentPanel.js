@@ -1,7 +1,7 @@
 import React from 'react';
 
-import FormControl from '../components/FormControl';
-import Editor from '../components/Editor';
+import FormControl from '../../components/FormControl/FormControl';
+import Editor from '../../components/Editor/Editor';
 import ContentPanelStyle from './ContentPanel.module.css';
 
 export default class ContentPanel extends React.Component {

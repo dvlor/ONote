@@ -1,9 +1,23 @@
-/* 列表 */
+/* 列表元素 */
 .noteItem{
-  display: flex;
-  align-items: center;
   padding: 0 5px;
   cursor: pointer;
+}
+.noteItem .content{
+  width: 240px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.noteItem.edit:hover{
+  background-color: unset;
+}
+.noteItem.edit:hover, .noteItem.edit:hover i{
+  color: #9E9E9E;
+}
+.noteItem.edit:hover time{
+  color: #757575;
 }
 
 .noteItem, .noteItem i, .noteItem time{
@@ -23,18 +37,27 @@
   color: #9E9E9E;
 }
 
-.noteItem span{
+.noteItem span, .noteItem input{
   flex: 1;
   margin: 0 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding: 0 .5em;
+}
+.noteItem input{
+  line-height: 48px;
+  outline: none;
+  border: 0;
+  font-size: inherit;
 }
 
 .noteItem time{
   color: #757575;
 }
 /* 列表元素 */
+
+/* 列表 */
 .noteList{
   line-height: 3em;
   font-size: 16px;
@@ -48,18 +71,18 @@
   border: solid 1px #f1f1f1;
   line-height: 2.5em;
   font-size: 14px;
-  width: 100%;
+  width: 240px;
   box-sizing: border-box;
   outline: none;
   padding: 0 .5em;
-  margin-bottom: 15px;
   color: #999;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 /* 外层 */
 .wraper{
-  width: 240px;
-  margin: 0 auto;
+  /* width: 240px; */
   padding: 10px 0;
   height: 100%;
   display: flex;

@@ -10,7 +10,9 @@ export class RightMenu extends React.Component{
 
 export class RightMenuItem extends React.Component{
   render() {
-    return <div className={MenuStyle.menuItem}>你好</div>;
+    return <div onClick={() => this.props.onClick && this.props.onClick()} className={MenuStyle.menuItem}>
+      {this.props.children}
+    </div>;
   }
 }
 

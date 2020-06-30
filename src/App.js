@@ -1,8 +1,7 @@
 import React from 'react';
-import SidePanel from './panel/SidePanel';
-import ListPanel from './panel/ListPanel';
-import ContentPanel from './panel/ContentPanel';
-import ContextMenuPanel from './panel/ContextMenuPanel';
+import SidePanel from './panel/SidePanel/SidePanel';
+import ListPanel from './panel/ListPanel/ListPanel';
+import ContentPanel from './panel/ContentPanel/ContentPanel';
 
 import './App.css';
 
@@ -12,7 +11,6 @@ function App() {
       <SidePanel />
       <ListPanel />
       <ContentPanel />
-      <ContextMenuPanel />
     </div>
   );
 }
